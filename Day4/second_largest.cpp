@@ -8,7 +8,7 @@ int main()
     int arr[n];
     for(int i=0;i<n;i++)
     {
-        scanf("%d",&arr[i]);
+        cin>>arr[i];
     }
     int largest=arr[0];
     int slargest=-1;
