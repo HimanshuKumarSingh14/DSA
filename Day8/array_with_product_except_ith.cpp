@@ -29,4 +29,4 @@ int main()
         cout<<answer[i]<<" ";
     }
     return 0;
-}
+} 
