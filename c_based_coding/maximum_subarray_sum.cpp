@@ -17,7 +17,7 @@ int main()
     for(int i=0;i<n;i++)
     {
         if(sum==0)
-         start=i;
+        start=i;
         sum+=arr[i];
         if(sum>maxi)
         {
