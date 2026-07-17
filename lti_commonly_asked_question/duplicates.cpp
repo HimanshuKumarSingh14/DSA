@@ -1,19 +1,25 @@
 #include<iostream>
+#include<unordered_map>
 using namespace std;
 int main()
 {
     int n;
     cin>>n;
-    int sum=(n*(n+1))/2;
-    int arr[n-1];
-    for(int i=0;i<n-1;i++)
+    int arr[n];
+    for(int i=0;i<n;i++)
     {
         cin>>arr[i];
     }
-    for(int i=0;i<n-1;i++)
+    unordered_map<int,int>mp;
+    for(int i=0;i<n;i++)
     {
-        sum-=arr[i];
+        mp[arr[i]]++;
     }
-    cout<<"Missing number:"<<sum;
+    for(auto it:mp){
+        if(it.second>1)
+        {
+             cout<<it.first;
+        }
+    }
     return 0;
 }
