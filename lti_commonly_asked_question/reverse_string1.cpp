@@ -15,7 +15,7 @@ int main()
     }
     for(char c:s)
     {
-        cout<<c<<;
+        cout<<c;
     }
     return 0;
 
